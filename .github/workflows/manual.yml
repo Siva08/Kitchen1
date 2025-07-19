@@ -1,0 +1,16 @@
+name: instructions
+on: [push]
+jobs:
+  cook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: grab ingridents
+        uses: actions/checkout@v3
+
+      - name: greet
+        run: echo "Hello chef, The Chef Special robot is ready to serve dinner!"
+      - name: Dinner served
+        run: echo "Dinner is ready, Chef Shiva! Enjoy your feast!"
+        
+        
+     
